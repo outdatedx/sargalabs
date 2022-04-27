@@ -9,7 +9,7 @@ body {
   height: 100vh;
   overflow: hidden;
   background: #00ff;
-  font-family: "Arial Narrow", "sans-serif";
+  font-family: "Arial Narrow", sans-serif;
   color: #fff;
   font-size: 12px;
   cursor: crosshair;
