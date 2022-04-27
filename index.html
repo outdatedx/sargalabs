@@ -1,49 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SARGA©</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="shortcut icon" href="icon_c.svg" type="image/svg+xml">
-</head>
-<body  onload="preload()">
+    <link rel="stylesheet" href="main.css" />
+    <link rel="shortcut icon" href="icon_c.svg" type="image/svg+xml" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
     <div id="loader">
-        <img src="icon_c.svg" alt="logo">
-    </div>
-    
-    <div id="hero">
-        <img src="Intro.gif" alt="SARGA">
-        <div class="social">
-            <h1 onclick="ig()">_ig</h1>
-            <h1 onclick="tw()">_tw</h1>
-        </div>
+      <img src="icon_c.svg" alt="logo" class="loader_img" />
     </div>
 
-
-
-
-<script>
-var to;
-    
-    function preload() {
-      to = setTimeout(showPage, 2000);
-    }
-    
-    function showPage() {
-        document.getElementById("loader").style.opacity = "0";
-        document.getElementById("hero").style.opacity = "100%";
-    }
-
-        function ig() {
-            window.open('http://www.instagram.com/sargalabs', '_blank')
-        }
-
-        function tw() {
-            window.open('http://www.twitter.com/labsSarga', '_blank');
-        }
-
-</script>
-</body>
+    <div class="social">
+      <a
+        href="http://instagram.com/sargalabs/"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><h1>_ig</h1></a
+      >
+      <a
+        href="http://twitter.com/labssarga/"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><h1>_tw</h1></a
+      >
+    </div>
+  </body>
 </html>
